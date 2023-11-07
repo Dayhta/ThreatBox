@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>nerd zone!</title>
+    </head>
+    <header>
+        Threat Intel generator
+    </header>
+    <body>
+            
+        <form action="/form" method="POST">
+            <label for="domain">Please enter the domain:</label><br>
+            <input type="text" id="domain" name="domain"><br>
+            <input type="submit">
+        </form>
+
+        <p>IP Information:
+            
+            <ul>
+                {% for x in checked %}
+                    
+                {{x}}
+
+                {% endfor %}
+            </ul>
+        </p>
+    </body>
+</html>
